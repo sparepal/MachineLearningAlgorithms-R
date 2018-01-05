@@ -32,6 +32,6 @@ summary(regressor)
 
 regressor=lm(formula = Profit ~ R.D.Spend + Marketing.Spend ,data=dataset)
 summary(regressor)
-#Spend has some significance(Optional)
+#Spend has some significance but(Using the Rsquare adjusted method this elimination would not be appropriate)
 regressor=lm(formula = Profit ~ R.D.Spend,data=dataset)
 summary(regressor)
